@@ -1,0 +1,87 @@
+/*  نوصل للعنصر من خلال الخاصية تاعه */
+
+/* [name attribute]{
+
+} */
+
+
+
+
+/*
+    1. [attr]
+    2. element[attr]
+    3. [attr="value"]
+    4. element[attr"value"]
+        search in the value in attribute:
+    5. [attr ^="value"] start with
+    6. [attr $="value"] end with
+    7. [attr *="value"] containing a specified value
+    8. [attr ~="value"] containing a specified word
+    9. [attr ="value" i] case sensitive (ex : class and id)
+    
+
+*/
+
+
+
+/* معناه روح لكل عنصر عندو الخاصية هدي وطبق عليه ما يلي  */
+/* 
+[type]{
+    background: rgb(1, 26, 250);
+}
+
+[placeholder]{
+    height: 40px;
+}
+ */
+
+
+
+/* 
+input[placeholder]{
+    background-color: red;
+} 
+*/
+
+
+
+/* 
+[type="password"]{
+    background-color: blueviolet;
+}
+ */
+
+
+
+/* 
+[href ^="www"]{
+    background-color: red;
+} */
+
+
+
+
+/* 
+[href $="com"]{
+    background-color: rgb(69, 233, 54);
+}
+ */
+
+
+
+/* 
+[href *="b"]{
+    background-color: rgb(251, 255, 0);
+}
+ */
+
+
+
+/* 
+ [href ~="test"]{
+    background-color: tomato;
+ }
+ */
+
+
+

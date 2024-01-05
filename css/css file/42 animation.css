@@ -1,0 +1,133 @@
+/* تحريك عنصر من نقطة الى نقطة خلال مدة معينة */
+
+/* body{
+    background-color: #222
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: spuare;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes spuare {
+    from{
+        background-color: red;
+        width: 0;
+    }
+    to{
+        background-color: blue;
+        width: 100%;
+    }
+
+
+    0%{
+        background-color: red;
+        width: 0;
+    }
+
+    50%{
+        background-color: green;
+    }
+
+    100%{
+        background-color: blue;
+        width: 100%;
+    }
+}
+
+=====================================================================
+
+*/
+
+
+
+
+
+body{
+    background-color: #222
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 20%;
+
+    animation-name: spuare;
+    animation-duration: 5s;
+    animation-delay: .5s;
+
+    animation-iteration-count: 3; /*تتحرك ثلاث مرات */
+    animation-iteration-count: infinite; /*تتحرك مالا نهاية */
+    animation-iteration-count: 1;
+
+    animation-direction: reverse;/*اعكس اتجاه البداية*/
+    animation-direction: alternate-reverse;/*يروح ويجي في الانجاه الغير العادي*/
+    animation-direction: alternate; /*  يروح ويجي في الانجاه العادي شرط يكون كاين اكثر من دورة */
+
+
+    animation-timing-function: ease;
+    animation-timing-function: linear;
+
+    animation-fill-mode: none; /*كي تكمل ارجع لوضعك الاصلي */
+    animation-fill-mode: forwards; /*كي تكمل ادي تنسيقات اخر فريم */
+    animation-fill-mode: backwards; /*كي تبدا ادي تنسيقات اول فريم*/
+    animation-fill-mode: both; /*كي تبدا ادي تنسيقات اول فريم و كي تكمل تدي تنسيقات اخر فريم */
+
+    animation-play-state: running;
+
+
+
+    animation: spuare 5s ease .5s 2 alternate both running ;
+}
+
+@keyframes spuare {
+    0%{
+        translate: 0 0;
+        background-color: aqua;
+        rotate: 0;
+    }
+    25%{
+        translate: 0 500px;
+        background-color: yellow;
+        rotate: 90deg;
+
+    }
+    50%{
+        translate: 500px 500px;
+        background-color: green;
+        rotate: 180deg;
+
+    }
+    75%{
+        translate: 500px 0;
+        background-color: blue;
+        rotate: 270deg;
+
+    }
+    /* 90%{
+        translate: 200px 200px;
+    } */
+    100%{
+        translate: 0 0 ;
+        background-color: darkgray;
+        rotate: 360deg;
+
+    }
+}
+
+div:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+/* shorthand:
+    
+animation: name duration timing-function delay eteration-count direction fill-mode play-stat;
+
+
+
+*/

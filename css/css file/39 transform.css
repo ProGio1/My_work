@@ -1,0 +1,76 @@
+/* animation in css  */
+
+/* transforam = تحويل العنصر من حالة الى حالة اخرى  */
+
+
+/* 
+    translate == move(x,y)
+
+    transform  translate(x,y);  == move(x,y)
+    transform  translate(x);  == move(x)
+    transform: translateX(x); == move(x)
+    transform: translateY(y); == move(y)
+
+========================================================================
+
+    scale == zoom in zoom out (x,y)
+
+    transform: scale(1); deloalt value
+    transform: scale(.4); zoom in تصغير
+    transform: scale(5); zoom out تكبير
+    transform: scalex(1); يزيد العرض
+    transform: scaley(1); يزيد الطول
+    transform: scale(-1); flep  يتقلب و كل ما تزيد الرقم يزيد يكبر بالمقلوب
+
+==============================================================================
+
+    rotate == 
+
+    transform: rotate(deg); دوران
+    transform: rotateX(deg); دوران على المحور اكس   transform: rotateX(90deg or 270); يختفي
+    transform: rotateY(deg); دوران على المحور واي   transform: rotateY(90deg or 270); يختفي
+
+==================================================================================
+
+    skew == الانحراف
+
+    tarnsform: skew(x deg , y deg); skew x and y
+    tarnsform: skew(x deg); skew x also
+    tarnsform: skewX(x deg ); skew x
+    tarnsform: skewY(x deg ); skew y
+
+===========================================================================
+
+    matrix(scaleX, skewY, skewX, scaleY, translateX, translateY)
+
+    transform: matrix(1, 0, 0, 1, 0, 0); default value
+
+*/
+
+div {
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+    /* position: absolute;
+    bottom: 0; */
+
+
+    /* transform: translate(50px , 100px);
+    transform: translateX(100px);
+    transform: translatey(100px); */
+
+
+    /* transform: scale(1); */
+
+
+    /* transform: rotateY(900deg); */
+
+
+    /* transform: skew(45deg); */
+
+
+    transform: matrix(1, 0, 0, 1, 100, 0);
+    transform: translate(100px, 0);
+    
+
+}
